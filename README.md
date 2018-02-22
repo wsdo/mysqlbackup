@@ -9,7 +9,10 @@
 
 # 配置
 1. 下载七牛qshell工具
-2. 拷贝config.ini.backup为config.ini
+2. 拷贝config.backup为config
+```
+cp config.backup config
+```
 3. 按照说明修改配置
 
 # 使用
@@ -28,9 +31,6 @@ crontab -e
 # 我这边网站不活跃，这里配置成每月备份一次
 * * * 1 * /bin/bash /foo/backup.sh
 ```
-
-# 更新说明
-* [issue-#1](https://github.com/Ecareyu/backup2qiniu/issues/1) 增加子目录配置项,为空时获取服务器hostname作为子目录名
 
 # 参考
 [backuptoqiniu](https://github.com/ccbikai/backuptoqiniu)
